@@ -109,7 +109,8 @@ const SearchPopupContent: FC<SearchPopupProps> = (props) => {
                   <div key={`search-popup-carousel-${i}`} className="search-popup-carousel search-popup-block">
                     <div>
                       <span className="search-popup-carousel-score">
-                        {score.score == -1 ? '?' : score.score.toFixed(2)}
+                        {' '}
+                        {score.score == -1 ? '?' : score.score.toFixed(2)}{' '}
                       </span>
                       <span className="search-popup-carousel-max-score">/ 5.0</span>
                     </div>
